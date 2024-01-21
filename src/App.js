@@ -8,10 +8,12 @@ import Premium from './components/Premium';
 import Advantages from './components/Advantages';
 import Surrounding from './components/Surrounding';
 import Contact from './components/Contact';
+import MainPage from './components/MainPage';
 
 function App() {
   return (
     <div className="App">
+      {/* <MainPage/> */}
       {/* <Header/> */}
       <LandingPage/>
       <SearchConfig/>

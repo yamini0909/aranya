@@ -1,7 +1,7 @@
 import React from 'react'
 import Header from './Header'
 import Circle from "../images/circle.png"
-
+import Arrow from '../images/arrow-up (1) 1.png'
 const LandingPage = () => {
   return (
     <div className="bg-cnt">
@@ -16,8 +16,9 @@ const LandingPage = () => {
               <h1 className='heading-main'>ARANYA</h1>
               <h3 className='subheading-main'>Pirimal Groups</h3>
             </div>
-            <div>
-              <img src={Circle}/>
+            <div className='circle'>
+              <img className='cicle-mb' src={Circle}/>
+              <img className='arrow arrow-mb' src={Arrow}/>
             </div>
       </div>
   </div>

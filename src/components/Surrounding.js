@@ -1,6 +1,13 @@
 import React from "react";
+import ValueData from "./ValueData";
 
 const Surrounding = () => {
+
+  const dataForComponentB = [
+    { percentage: 80, text: ' Botanical garden views' },
+    { percentage: 50, text: 'Mumbai harbour and botanical garden views' },
+    { percentage: 75, text: ' Mumbai harbour views' },
+  ];
   return (
     <div className="surrounding-cnt cnt">
       <div className="surround-custom-width">
@@ -16,22 +23,7 @@ const Surrounding = () => {
           truly spectacular with premium dual aspect living
         </p>
       </div>
-      <div className="value flex">
-        <div className="value1">
-          <h2 className="value-heading">66%</h2>
-          <p className="value-text"> Botanical garden views</p>
-        </div>
-        <div className="value3">
-          <h2 className="value-heading">33%</h2>
-          <p className="value-text">
-            Mumbai harbour and botanical garden views
-          </p>
-        </div>
-        <div className="value2">
-          <h2 className="value-heading">66%</h2>
-          <p className="value-text"> Mumbai harbour views</p>
-        </div>
-      </div>
+      <ValueData values={dataForComponentB} />
       <div className="line"></div>
       <div className="location">
         <div className="heading">

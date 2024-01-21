@@ -67,12 +67,15 @@ h4 {
   text-align: left;
 }
 .custom-info{
-  width: 50%
+  /* width: 50% */
+  margin-left: 50%
 }
 .info-box{
     margin: 5rem 0;
+    position: relative;
+    width: 100%
 }
-. .bg-cnt {
+ .bg-cnt {
   position: relative;
   background-image: url("../images/landingpage.jpg");
   background-size: cover;
@@ -81,8 +84,8 @@ h4 {
   height: 100vh;
 }
 .img-info{
-  height: 30%;
-  width: 30%
+  height:400px;
+  width: 300px
 }
 .overlay {
   /* position: absolute;
@@ -107,7 +110,7 @@ h4 {
   display: flex;
   list-style: none;
   color: white;
-  padding: 0 28% 0 10%;
+  padding: 0 20% 0 10%;
 }
 .menu-cnt {
   display: flex;
@@ -123,12 +126,14 @@ h4 {
   border: none;
   padding: 10px 20px;
   border-radius: 8px;
+  width: 30%
 }
 .main-cnt {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 10px;
+  margin-top: 5rem;
 }
 .mumbai {
   border-radius: 8px;
@@ -137,15 +142,25 @@ h4 {
   width: 250px;
   background: transparent;
   color: white;
-  margin: 80px 0;
+ 
 }
 .heading-main {
-  font-size: 8rem;
+  font-size: 10rem;
   font-weight: 400;
   margin: 0;
 }
+.circle{
+  position: relative;
+  margin-top: 20px
+}
+.arrow{
+  position: absolute;
+  top: 20%;
+  right: 20%;
+}
 .subheading-main {
   color: #00e5a1;
+  /* margin-bottom: 20px 0 !important; */
 }
 .search-heading {
   font-size: 23px;
@@ -163,15 +178,20 @@ h4 {
 .search-config-box {
   border: 1px solid white;
   background: white;
-  padding: 10px 40px;
-  margin: 0 auto;
+  padding: 10px;
+  /* margin: 0 auto; */
   border-radius: 17px;
-  width: 90%;
+  width: 100%;
+  justify-content: space-between
 }
 .item-cnt {
   display: flex;
   align-items: center;
   gap: 10px;
+}
+.justify-evenly{
+  justify-content: space-between;
+  width: 100%
 }
 .bg-green {
   background: #ebfaff;
@@ -220,7 +240,13 @@ h4 {
   padding: 20px;
   display: flex;
 }
-
+.search-cnt{
+  background: #0EA57A;
+  padding: 10px 40px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+}
 .icon {
   margin-right: 20px;
   position: absolute;
@@ -359,7 +385,13 @@ li {
 . {
   font-family: New York Large;
 }
-
+.text-left{
+  text-align: justify;
+}
+.custom-info-left{
+  width: 50%;
+  
+}
 /* Contact Styling */
 .contact-cnt {
   justify-content: space-between;
@@ -383,6 +415,16 @@ li {
   width: 100%;
   border-radius: 10px;
   padding: 10px 30px;
+  gap: 15px;
+}
+
+.input-contact{
+  background: transparent;
+  border: transparent;
+  width: 100%;
+  height: 20px;
+  outline: none;
+  color: white;
 }
 
 .foggy-map-container {
@@ -449,4 +491,124 @@ li {
 }
 ul {
   padding: 0;
+}
+
+
+/* image rotation */
+
+.imageA{
+  position: relative;
+    transform: rotate(-15deg);
+}
+.imageB{
+  position: absolute;
+    /* width: 100%; */
+    /* height: auto; */
+    top: -10%%;
+    left: 57px;
+    transform: rotate(8deg);
+}
+.imageB-right{
+  position: absolute;
+    /* width: 100%; */
+    /* height: auto; */
+    top: -10%%;
+    right: 57px;
+    transform: rotate(8deg);
+}
+.values-container {
+  display: flex;
+  justify-content: space-between; 
+  width: 100%;
+}
+
+/* Mobile responsive */
+
+@media screen and (max-width: 480px) {
+  .menu-list{
+    display: none;
+  }
+  .heading-main{
+    font-size: 1rem;
+  }
+  .main-cnt{
+    margin-top: 1rem;
+  }
+  .cicle-mb{
+    height: 50px;
+    width: 50px
+  }
+  .arrow-mb{
+    height: 20px;
+    width: 20px
+  }
+  .search-config-cnt{
+    margin: 1rem;
+  }
+  .justify-evenly{
+    flex-direction: column
+  }
+  .search-cnt{
+    display: none;
+  }
+  .mb-none{
+    display: none;
+  }
+  .info-box{
+    margin: 0;
+  }
+  .mb-text{
+    text-align: right;
+  }
+  .text-left{
+    text-align: left;
+  }
+  .values-container {
+    flex-direction: column
+  }
+  .premium-cnt{
+    padding: 10px;
+  }
+  .premium-container{
+    display: block;
+    margin: 20px 0
+  }
+  .data-container{
+    padding: 10px;
+    display: block
+  }
+  .cnt{
+    margin: 10px;
+  }
+  .surrounding-cnt{
+    margin: 10px;
+  }
+  h1, .prem-heading ,.location-heading{
+    font-size: 20px
+  }
+  h2{
+    font-size: 15px;
+  }
+  .image-blurred-edge{
+    display: none;
+  }
+  .location-center{
+    display: block;
+    margin-top: 1rem;
+  }
+  .contact-form{
+    width: 60%
+  }
+  .surround-custom-width{
+    width: 100%
+  }
+  .enquire{
+    display: none;
+  }
+  .mumbai{
+    display: none;
+  }
+  .circle{
+    display:  none;
+  }
 }
